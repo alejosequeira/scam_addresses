@@ -8,7 +8,6 @@ import { Alert, AlertTitle } from '@mui/material';
 export default function SendTX() {
     const [from, setFrom] = useState('0x462A0d4fE4C2b10aadFBD4628f697d09a76Cd954');
     const [to, setTo] = useState('0x3b539558c6465968ccfde3a731bf63d6d4d8b85d');
-    const [value, setValue] = useState('0x0');
     const [gasLimit, setGasLimit] = useState('19000');
     const [gasPrice, setGasPrice] = useState('6876489100');
     const [data, setData] = useState('0x');
