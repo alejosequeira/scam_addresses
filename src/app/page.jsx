@@ -8,8 +8,8 @@ export default function Home() {
 
   return (
     <div className={style.form_test}>
-      <div className={style.block}><Connect /></div>
       <div className={style.block}><SendTX /></div>
+      <div className={style.block}><Connect /></div>
       <div className={style.block}><SignTX /></div>
     </div>
   );
