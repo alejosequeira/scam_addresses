@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useState } from 'react';
-import style from './SendTX.module.css';
+import style from './sendTX.module.css';
 import Web3 from 'web3';
 import { Alert, AlertTitle } from '@mui/material';
 
