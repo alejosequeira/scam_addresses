@@ -200,11 +200,11 @@ export default function SignTX() {
                             sx: {
                                 color: 'white',
                                 backgroundColor: '#434343',
-                                fontSize: 15,
+                                fontSize: "0.65rem",
                                 border: '1px solid #434343',
                                 borderRadius: '0px',
                                 height: '20px',
-                                width: '400px',
+                                width: '17rem',
                                 boxShadow: '#666666 1px 1px 1px 0px inset, #666666 -1px -1px 1px 0px inset',
                                 textDecoration: 'none',
                                 padding: '0 10px',

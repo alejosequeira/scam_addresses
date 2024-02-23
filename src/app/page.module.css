@@ -6,7 +6,7 @@
 }
 
 .block {
-    border: 1px solid black;
+    border: 1px solid rgb(222, 222, 222);
     font-family: var(--default-font);
     border: 1px solid var(--black);
     background-color: var(--lightGray);
