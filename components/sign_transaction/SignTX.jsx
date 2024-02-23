@@ -104,6 +104,40 @@ export default function SignTX() {
 
     return (
         <div className={style.container}>
+            <div className={style.formu_ADDRESS}>
+                <label htmlFor="addressInput_eht" className={style.label_address}>Enter an Address</label>
+
+                <TextField
+                    type="text"
+                    id="addressInput_eht"
+                    value={address}
+                    onChange={handleAddressChange}
+                    placeholder='0x462A0d4fE4C2b10aadFBD4628f697d09a76Cd954...'
+
+                    InputProps={{
+                        sx: {
+                            color: 'white',
+                            backgroundColor: '#434343',
+                            fontSize: "0.65rem",
+                            border: '1px solid rgb(222, 222, 222)',
+                            borderRadius: '5px',
+                            height: '1rem',
+                            width: '17rem',
+                            boxShadow: '#666666 1px 1px 1px 0px inset, #666666 -1px -1px 1px 0px inset',
+                            textDecoration: 'none',
+                            padding: '0 10px',
+                            '&:focus': {
+                                border: '1px solid #434343',
+                            },
+                        },
+                    }}
+                    inputProps={{
+                        sx: {
+                            height: '20px',
+                            textAlign: 'center',
+                        },
+                    }}
+                /></div>
 
 
             <div className={style.formu}>
@@ -187,39 +221,7 @@ export default function SignTX() {
                         <span className={style.bouton_download_span}> Download OpenSea Contract sample</span>
                     </button>
                 </div>
-                <div className={style.formu_ADDRESS}>
-                    <label htmlFor="addressInput_eht" className={style.label_address}>Enter an Address</label>
-                    <TextField
-                        type="text"
-                        id="addressInput_eht"
-                        value={address}
-                        onChange={handleAddressChange}
-                        placeholder='0x462A0d4fE4C2b10aadFBD4628f697d09a76Cd954...'
 
-                        InputProps={{
-                            sx: {
-                                color: 'white',
-                                backgroundColor: '#434343',
-                                fontSize: "0.65rem",
-                                border: '1px solid #434343',
-                                borderRadius: '0px',
-                                height: '20px',
-                                width: '17rem',
-                                boxShadow: '#666666 1px 1px 1px 0px inset, #666666 -1px -1px 1px 0px inset',
-                                textDecoration: 'none',
-                                padding: '0 10px',
-                                '&:focus': {
-                                    border: '1px solid #434343',
-                                },
-                            },
-                        }}
-                        inputProps={{
-                            sx: {
-                                height: '20px',
-                                textAlign: 'center',
-                            },
-                        }}
-                    /></div>
                 <div className={style.textareaContainer}>
                     <button className={style.toggleButton} onClick={toggleDisplay}>
                         {displayContract ? 'ERC20' : 'OpenSea'}

@@ -30,11 +30,14 @@
     background-color: var(--lightGray);
     margin: 0px;
     padding: 0px 0px 0px 0px;
+    margin-bottom: 0.5rem;
   }
   .label_address {
-    color: var(--black); 
-    margin: 0px;    
+    color: var(--darkGray);
     font: var(--default-font);
+    font-size: 0.70rem;
+    font-weight: 600;
+    letter-spacing: -0.0833333333em;
   }
   .textarea_json{
     text-align: start;
