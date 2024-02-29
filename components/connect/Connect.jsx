@@ -101,13 +101,16 @@ export default function Connect() {
                             backgroundColor: '#434343',
                             fontSize: "0.65rem",
                             border: '1px solid rgb(222, 222, 222)',
-                            borderRadius: '5px',
-                            height: '1rem',
+                            borderRadius: '5px',                            
                             width: '17rem',
                             boxShadow: '#666666 1px 1px 1px 0px inset, #666666 -1px -1px 1px 0px inset',
                             textDecoration: 'none',
-                            padding: '0px',
-                            marginTop:'0.5rem'
+                            padding: '0 10px 0px 0px',
+                            textAlign: 'center',
+                            margin: '0 5px',
+                            marginTop: '5px',
+                            display: 'flex',
+                            justifyContent: 'center'
                         }}
                     >
                         {accountsResult}</Alert>
