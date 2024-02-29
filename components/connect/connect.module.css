@@ -1,29 +1,86 @@
-.bouton {
-    font: var(--default-font);
-    font-size: 0.7rem;
-    padding: 0px 5px;
-    border: 1px solid var(--black);
-    border-radius: 5px;
-    background-color: var(--lightBlue);
-    color: var(--ligtherGray);
+.boton{
+    background-color: var(--darkGray);
+    border: 2px solid white;
+    color: white;
+    padding: 0 15px;
+    margin: 0 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
-    box-shadow: black 0px 1px 5px;
-    width: 9rem;
-    margin: 0 10px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px var(--black);
+    transition: 0.5s;
+}
+.boton:hover{
+    background-color: var(--brand);
+    color: var(--black);
+    box-shadow: 5px 5px 10px var(--darkGray);
+    transition: 0.5s;
+}
+.container_connected{
+    color:  var(--darkGray);
+    padding: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: var(--default-font);    
+    border-radius: 50px;
+}
+.container_connected:hover{
+    color: var(--black);
+}
+.container_connected h6{
+    color: var(--black);   
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+}
+.container_connected h5{
+    font-size: 0.7rem;
+}
+.text_copied {
+    display: none;
+    position: absolute;
+    top: -23px;
+    left: -15px;
+    background-color: var(--darkGray);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font: var(--default-font);
+    font-size: 0.5rem;
 }
 
-.bouton:hover {
-    background-color: var(--lightBlue);
-    color: var(--white);
-    box-shadow: black 0px 1px 10px;
+.container:hover .text_copied {
+    display: block;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: var(--lightGray);
-    margin: 0;
+
+.clipboard {
+    width: 15px;
     padding: 0;
+    margin: 0;
+    margin-left: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.clipboard:hover {
+    color: black;
+    transform: scale(1.1);
+}
+@media (max-width: 600px) {
+    .container_connected h6 {
+        color: var(--black);
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        max-width: 6em; 
+        text-align: center;
+    }
+    .container_connected h5{
+        font-size: 0.5rem;
+    } 
 }
